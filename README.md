@@ -45,7 +45,7 @@ A trie offers fast-autocompletion facilities:
     // Now you can take this trie with you! and then, when a query comes:
     
     String query_prefix = {get query from somewhere, ex: search box}
-    String suggestions = trie.getKeysStartingWith(query_prefix);
+    List<String> suggestions = trie.getKeysStartingWith(query_prefix);
     
     { Render Suggestion! }
         
